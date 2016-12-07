@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  @include row();
+}
+
+.nav {
+  @include size(100%, 123px);
+  border-bottom: 4px solid orange;
+  margin-bottom: 24px;
+}
+
+.social-media {
+  @include size(100%, 28px);
+  background: black;
+}
+
+.main {
+  @include outer-container;
+}
+
+.main-content {
+  @include span-columns(8);
+}
+
+.top-content {
+  @include span-columns(12);
+  @include vertical-gutter;
+}
+
+.big {
+  @include span-columns(8 of 12);
+  height: 568.31px;
+  background: lightblue;
+}
+
+.medium-container {
+  @include span-columns(4 of 12);
+  height: 568.31px;
+}
+
+.medium {
+  background: yellow;
+  height: 268.155px;
+  &:first-of-type {
+    @include vertical-gutter;
+  }
+}
+
+.rectangle-container {
+  @include vertical-gutter;
+  @include span-columns(12);
+}
+
+.rectangle {
+  @include span-columns(6 of 12);
+  height: 175px;
+  background: teal;
+}
+
+.small-container {
+  @include span-columns(12)
+}
+
+.small {
+  @include span-columns(3 of 12);
+  height: 165px;
+  background: pink;
+}
+
+.main-side-bar {
+  @include span-columns(4);
+  background-color: aquamarine;
+  height: 656px;
+}

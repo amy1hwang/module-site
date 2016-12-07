@@ -1,0 +1,13 @@
+.social-media-icons {
+  @include size(100%, 28px);
+  max-width: 1200px;
+  @include center;
+  img {
+    height: 100%;
+    float: right;
+  }
+}
+
+.nav-main {
+  
+}
