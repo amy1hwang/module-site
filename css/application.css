@@ -62,7 +62,7 @@ textarea {
 [type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea {
   appearance: none;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #f3f3f3;
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
@@ -71,7 +71,7 @@ textarea {
   transition: border-color 150ms ease;
   width: 100%; }
   [type='color']:hover, [type='date']:hover, [type='datetime']:hover, [type='datetime-local']:hover, [type='email']:hover, [type='month']:hover, [type='number']:hover, [type='password']:hover, [type='search']:hover, [type='tel']:hover, [type='text']:hover, [type='time']:hover, [type='url']:hover, [type='week']:hover, input:not([type]):hover, textarea:hover {
-    border-color: #b1b1b1; }
+    border-color: #c2c2c2; }
   [type='color']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='email']:focus, [type='month']:focus, [type='number']:focus, [type='password']:focus, [type='search']:focus, [type='tel']:focus, [type='text']:focus, [type='time']:focus, [type='url']:focus, [type='week']:focus, input:not([type]):focus, textarea:focus {
     border-color: #1565c0;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(18, 89, 169, 0.7);
@@ -80,7 +80,7 @@ textarea {
     background-color: #f2f2f2;
     cursor: not-allowed; }
     [type='color']:disabled:hover, [type='date']:disabled:hover, [type='datetime']:disabled:hover, [type='datetime-local']:disabled:hover, [type='email']:disabled:hover, [type='month']:disabled:hover, [type='number']:disabled:hover, [type='password']:disabled:hover, [type='search']:disabled:hover, [type='tel']:disabled:hover, [type='text']:disabled:hover, [type='time']:disabled:hover, [type='url']:disabled:hover, [type='week']:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover {
-      border: 1px solid #ddd; }
+      border: 1px solid #f3f3f3; }
   [type='color']::placeholder, [type='date']::placeholder, [type='datetime']::placeholder, [type='datetime-local']::placeholder, [type='email']::placeholder, [type='month']::placeholder, [type='number']::placeholder, [type='password']::placeholder, [type='search']::placeholder, [type='tel']::placeholder, [type='text']::placeholder, [type='time']::placeholder, [type='url']::placeholder, [type='week']::placeholder, input:not([type])::placeholder, textarea::placeholder {
     color: #858585; }
 
@@ -120,7 +120,7 @@ body {
     display: block; }
 
 .nav {
-  height: 123px;
+  height: 151px;
   width: 100%;
   border-bottom: 4px solid orange;
   margin-bottom: 24px; }
@@ -131,7 +131,7 @@ body {
   background: black; }
 
 .main {
-  max-width: 1200px;
+  max-width: 1150px;
   margin-left: auto;
   margin-right: auto; }
   .main::after {
@@ -228,15 +228,93 @@ body {
   .main-side-bar:last-child {
     margin-right: 0; }
 
+.social-media {
+  display: block; }
+  .social-media::after {
+    clear: both;
+    content: "";
+    display: block; }
+
 .social-media-icons {
-  height: 28px;
-  width: 100%;
-  max-width: 1200px;
+  max-width: 1150px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  height: 28px;
+  width: 100%; }
+  .social-media-icons::after {
+    clear: both;
+    content: "";
+    display: block; }
   .social-media-icons img {
     height: 100%;
     float: right; }
+
+.nav-main {
+  display: block;
+  padding-top: 10px; }
+  .nav-main::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.nav-main-content {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto; }
+  .nav-main-content::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.logo {
+  float: left;
+  display: block;
+  margin-right: 3.57869%;
+  width: 9.36865%;
+  margin-right: 0; }
+  .logo:last-child {
+    margin-right: 0; }
+  .logo img {
+    height: 93px;
+    width: 75px; }
+
+.nav-list {
+  float: left;
+  display: block;
+  margin-right: 3.57869%;
+  width: 78.42111%;
+  margin-right: 0;
+  padding-top: 30px; }
+  .nav-list:last-child {
+    margin-right: 0; }
+
+.now {
+  margin-top: 13px; }
+
+.live-search {
+  float: left;
+  display: block;
+  margin-right: 3.57869%;
+  width: 11.95812%;
+  margin-right: 0;
+  padding-top: 32px;
+  padding-left: 7px; }
+  .live-search:last-child {
+    margin-right: 0; }
+  .live-search a {
+    color: #fa9000;
+    font-weight: 800;
+    position: relative;
+    bottom: 7px; }
+
+.search {
+  height: 29px;
+  width: 29px;
+  border-radius: 100%;
+  background-color: #e6e6e6;
+  margin-left: 30px;
+  padding: 4px;
+  opacity: 0.5; }
 
 ul,
 ol {
@@ -254,6 +332,27 @@ dt {
 dd {
   margin: 0; }
 
+.dropdowns {
+  text-align: center; }
+  .dropdowns li {
+    font-size: 1.15em;
+    display: inline;
+    margin-left: 15px;
+    margin-right: 15px; }
+    .dropdowns li a {
+      color: black; }
+
+.triangle {
+  position: relative;
+  top: 30.5px;
+  left: 5px;
+  padding-top: 15px;
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border-color: black transparent transparent;
+  border-width: 4px 4px 0; }
+
 figure {
   margin: 0; }
 
@@ -269,13 +368,13 @@ table {
   width: 100%; }
 
 th {
-  border-bottom: 1px solid #a6a6a6;
+  border-bottom: 1px solid #b6b6b6;
   font-weight: 600;
   padding: 0.75em 0;
   text-align: left; }
 
 td {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #f3f3f3;
   padding: 0.75em 0; }
 
 tr,
@@ -311,10 +410,27 @@ a {
     color: #104c90; }
 
 hr {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #f3f3f3;
   border-left: 0;
   border-right: 0;
   border-top: 0;
   margin: 1.5em 0; }
+
+li {
+  font-weight: bold; }
+
+h6 {
+  margin-left: 27px;
+  display: inline-block;
+  font-size: .95em;
+  font-weight: normal; }
+
+.now a {
+  margin-left: 12px;
+  letter-spacing: -0.5px;
+  font-size: .9em;
+  color: gray; }
+  .now a:first-of-type {
+    margin-left: 10px; }
 
 /*# sourceMappingURL=application.css.map */

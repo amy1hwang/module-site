@@ -1,7 +1,11 @@
+
+.social-media {
+  @include row();
+}
+
 .social-media-icons {
+  @include outer-container;
   @include size(100%, 28px);
-  max-width: 1200px;
-  @include center;
   img {
     height: 100%;
     float: right;
@@ -9,5 +13,50 @@
 }
 
 .nav-main {
-  
+  @include row();
+  padding-top: 10px;
+}
+
+.nav-main-content {
+  @include outer-container;
+}
+
+.logo {
+  @include span-columns(1.5);
+  @include omega;
+  // @include no-gutter;
+  img {
+    @include size(75px, 93px);
+  }
+}
+
+.nav-list {
+  @include span-columns(9.5);
+  @include omega;
+  padding-top: 30px;
+}
+
+.now {
+  margin-top: 13px;
+}
+
+.live-search {
+  @include span-columns(1.8);
+  @include omega;
+  padding-top: 32px;
+  padding-left: 7px;
+  a {
+    color: $orange;
+    font-weight: 800;
+    @include position(relative, null null 7px null);
+  }
+}
+
+.search {
+  @include size(29px, 29px);
+  border-radius: 100%;
+  background-color: darken($light-gray, 5%);
+  margin-left: 30px;
+  padding: 4px;
+  opacity: 0.5;
 }

@@ -40,3 +40,24 @@ hr {
   border-top: 0;
   margin: $base-spacing 0;
 }
+
+li {
+  font-weight: bold;
+}
+
+h6 {
+  margin-left: 27px;
+  display: inline-block;
+  font-size: .95em;
+  font-weight: normal;
+}
+
+.now a {
+  margin-left: 12px;
+  letter-spacing: -0.5px;
+  font-size: .9em;
+  color: gray;
+  &:first-of-type {
+    margin-left: 10px;
+  }
+}

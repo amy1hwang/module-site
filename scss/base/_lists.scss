@@ -17,3 +17,23 @@ dt {
 dd {
   margin: 0;
 }
+
+.dropdowns {
+  text-align: center;
+  li {
+    font-size: 1.15em;
+    display: inline;
+    margin-left: 15px;
+    margin-right: 15px;
+    a {
+      color: black;
+    }
+  }
+}
+
+.triangle {
+  @include position(relative, 30.5px null null 5px);
+  padding-top: 15px;
+  @include triangle("down", black, 8px);
+
+}
