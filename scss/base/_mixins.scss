@@ -10,3 +10,21 @@
 @mixin no-gutter {
   margin: 0;
 }
+
+@mixin box($size: null, $top: null) {
+  background: white;
+  box-shadow: 2px 2px 2px rgb(231, 231, 231);
+  .caption {
+    @include position(relative, $top null null null);
+    h5 {
+      text-transform: uppercase;
+      color: $orange;
+      font-size: .7em;
+      @if $size == 'top-content' {
+        display: inline-block;
+        padding: 5px 8px;
+        background-color: white;
+      } 
+    }
+  }
+}

@@ -15,6 +15,7 @@ body {
 
 .container {
   @include row();
+  background: $light-gray;
 }
 
 .nav {
@@ -43,18 +44,25 @@ body {
 
 .big {
   @include span-columns(8 of 12);
-  height: 568.31px;
-  background: lightblue;
+  @include box(top-content, -25px);
+  height: 591.31px;
+  .caption {
+    h5 {
+      text-transform: uppercase;
+      color: $orange;
+      font-size: 1.05em;
+    }
+  }
 }
 
 .medium-container {
   @include span-columns(4 of 12);
-  height: 568.31px;
+  height: 591.31px;
 }
 
 .medium {
-  background: yellow;
-  height: 268.155px;
+  @include box(top-content, -15px);
+  height: 279.655px;
   &:first-of-type {
     @include vertical-gutter;
   }
@@ -67,8 +75,11 @@ body {
 
 .rectangle {
   @include span-columns(6 of 12);
+  @include box;
   height: 175px;
-  background: teal;
+  img {
+    float: left;
+  }
 }
 
 .small-container {
@@ -77,12 +88,12 @@ body {
 
 .small {
   @include span-columns(3 of 12);
+  @include box;
   height: 165px;
-  background: pink;
 }
 
 .main-side-bar {
   @include span-columns(4);
-  background-color: aquamarine;
+  @include box;
   height: 656px;
 }

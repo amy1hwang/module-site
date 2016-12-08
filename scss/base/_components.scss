@@ -1,0 +1,14 @@
+.triangle {
+  @include position(relative, 30.5px null null 5px);
+  padding-top: 15px;
+  @include triangle("down", black, 8px);
+}
+
+.play {
+  border: 2px solid black;
+  border-radius: 100%;
+  padding: 10px 10px 9px 12px;
+  margin-right: 10px;
+  font-size: 0.35em;
+  @include position(relative, null null 10px 5px);
+}

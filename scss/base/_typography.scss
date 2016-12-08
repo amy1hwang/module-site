@@ -45,6 +45,23 @@ li {
   font-weight: bold;
 }
 
+
+.big {
+  h1 {
+    font-size: 2.8em;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  h5 {
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 1.4em;
+    color: $medium-gray;
+    padding: 10px;
+  }
+}
+
 h6 {
   margin-left: 27px;
   display: inline-block;

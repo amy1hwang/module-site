@@ -30,10 +30,3 @@ dd {
     }
   }
 }
-
-.triangle {
-  @include position(relative, 30.5px null null 5px);
-  padding-top: 15px;
-  @include triangle("down", black, 8px);
-
-}
