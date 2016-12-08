@@ -191,10 +191,13 @@ body {
   .big .caption {
     position: relative;
     top: -25px; }
+    .big .caption h1 {
+      padding: 10px; }
     .big .caption h5 {
       text-transform: uppercase;
       color: #fa9000;
-      font-size: .7em;
+      font-size: .7em; }
+    .big .caption h5 {
       display: inline-block;
       padding: 5px 8px;
       background-color: white; }
@@ -219,10 +222,13 @@ body {
   .medium .caption {
     position: relative;
     top: -15px; }
+    .medium .caption h1 {
+      padding: 10px; }
     .medium .caption h5 {
       text-transform: uppercase;
       color: #fa9000;
-      font-size: .7em;
+      font-size: .7em; }
+    .medium .caption h5 {
       display: inline-block;
       padding: 5px 8px;
       background-color: white; }
@@ -248,12 +254,14 @@ body {
   height: 175px; }
   .rectangle:last-child {
     margin-right: 0; }
-  .rectangle .caption {
-    position: relative; }
-    .rectangle .caption h5 {
-      text-transform: uppercase;
-      color: #fa9000;
-      font-size: .7em; }
+  .rectangle .caption h1 {
+    padding: 10px; }
+  .rectangle .caption h5 {
+    text-transform: uppercase;
+    color: #fa9000;
+    font-size: .7em; }
+  .rectangle .caption .h1 {
+    margin: 10px; }
   .rectangle img {
     float: left; }
 
@@ -275,12 +283,12 @@ body {
   height: 165px; }
   .small:last-child {
     margin-right: 0; }
-  .small .caption {
-    position: relative; }
-    .small .caption h5 {
-      text-transform: uppercase;
-      color: #fa9000;
-      font-size: .7em; }
+  .small .caption h1 {
+    padding: 10px; }
+  .small .caption h5 {
+    text-transform: uppercase;
+    color: #fa9000;
+    font-size: .7em; }
 
 .main-side-bar {
   float: left;
@@ -292,12 +300,12 @@ body {
   height: 656px; }
   .main-side-bar:last-child {
     margin-right: 0; }
-  .main-side-bar .caption {
-    position: relative; }
-    .main-side-bar .caption h5 {
-      text-transform: uppercase;
-      color: #fa9000;
-      font-size: .7em; }
+  .main-side-bar .caption h1 {
+    padding: 10px; }
+  .main-side-bar .caption h5 {
+    text-transform: uppercase;
+    color: #fa9000;
+    font-size: .7em; }
 
 .social-media {
   display: block; }
